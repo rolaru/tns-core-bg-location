@@ -37,7 +37,7 @@ application.on(application.launchEvent, function () {
 application.on(application.exitEvent, function () {
     console.log('On exit close job service...');
     if (application.android && backgroundIds.length > 0) {
-        var context = utils.ad.getApplicationContext();
+        var context = tnsCoreUtils.ad.getApplicationContext();
         var jobScheduler = context.getSystemService((android.content.Context).JOB_SCHEDULER_SERVICE);
         var service = backgroundIds.pop();
         jobScheduler.cancel(service);
