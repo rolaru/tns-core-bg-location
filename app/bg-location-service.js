@@ -34,7 +34,7 @@ if (application.android) {
                         },
                         {
                             desiredAccuracy: Accuracy.high,
-                            updateDistance: 0.1,
+                            updateDistance: 0,
                             updateTime: 3000,
                             minimumUpdateTime: 100
                         });
@@ -74,7 +74,7 @@ if (application.android) {
                         },
                         {
                             desiredAccuracy: Accuracy.high,
-                            updateDistance: 0.1,
+                            updateDistance: 0,
                             updateTime: 3000,
                             minimumUpdateTime: 100
                         });
