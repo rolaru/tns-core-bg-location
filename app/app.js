@@ -19,10 +19,10 @@ application.on(application.launchEvent, function () {
 
         if (device.sdkVersion >= "26") {
             var component = new android.content.ComponentName(context, com.nativescript.location.BackgroundService26.class);
-            var builder = new (android.app).job.JobInfo.Builder(1, component);
-            builder.setRequiredNetworkType((android.app).job.JobInfo.NETWORK_TYPE_ANY);
-            builder.setPeriodic(1000);
-            var jobScheduler = context.getSystemService((android.content.Context).JOB_SCHEDULER_SERVICE);
+            var builder = new android.app.job.JobInfo.Builder(1, component);
+            builder.setRequiredNetworkType(android.app.job.JobInfo.NETWORK_TYPE_ANY);
+            builder.setPeriodic(15 * 60 * 1000);
+            var jobScheduler = context.getSystemService(android.content.Context.JOB_SCHEDULER_SERVICE);
             var service = jobScheduler.schedule(builder.build());
             backgroundIds.push(service);
             console.log('Initialized the background location service (API 26+)...');
