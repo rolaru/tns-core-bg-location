@@ -26,7 +26,7 @@ application.on(application.launchEvent, function () {
             var service = jobScheduler.schedule(builder.build());
             backgroundIds.push(service);
             console.log('Initialized the background location service (API 26+)...');
-            console.log(service)
+            console.log(service);
         } else {
             context.startService(intent);
             console.log('Initialized the background location service (API < 26)...');
