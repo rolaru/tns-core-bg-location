@@ -1,0 +1,21 @@
+{
+    "nativescript": {
+        "id": "org.nativescript.nsbglocationtest",
+        "tns-android": {
+            "version": "4.2.0"
+        },
+        "tns-ios": {
+            "version": "4.2.0"
+        }
+    },
+    "description": "NativeScript Application",
+    "license": "SEE LICENSE IN <your-license-filename>",
+    "repository": "<fill-your-repository-here>",
+    "dependencies": {
+        "nativescript-geolocation": "^4.3.0",
+        "nativescript-theme-core": "~1.0.4",
+        "nativescript-toast": "^1.4.6",
+        "tns-core-modules": "~4.2.0"
+    },
+    "readme": "NativeScript Application"
+}
